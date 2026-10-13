@@ -19,6 +19,16 @@
 :root { --c-canvas: #1e1815; --c-surface: #2a221d; --c-ink: #f2e9dd; --c-ink-soft: #b9ab9b; --c-accent: #c8a25c; --c-accent-ink: #1f170f; --c-accent-deep: #c8a25c; --f-display: "Unbounded", "Arial Black", system-ui, sans-serif; --f-text: "Golos Text", "Segoe UI", system-ui, sans-serif; --h1k: 0.8; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<style>
+.s-masters { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.s-masters li { background: var(--c-surface); border-radius: var(--r); padding: 28px 24px 24px; border: 1px solid var(--hair); display: grid; gap: 18px; align-content: start; }
+.s-masters__name { font-family: var(--f-display); font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 2.6rem); line-height: 1.05; color: var(--c-accent); }
+.s-masters blockquote { margin: 0; font-size: 1.02rem; }
+.s-masters blockquote + blockquote { padding-top: 18px; border-top: 1px solid var(--hair); }
+.s-masters__who { margin-top: 8px; font-size: .85rem; color: var(--c-ink-soft); }
+.s-masters__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 28px; }
+.s-masters__cta span { color: var(--c-ink-soft); font-size: .95rem; max-width: 46ch; }
+</style>
 </head>
 <body class="s-prod" id="top" data-wa="79638555005" data-tg="" data-max="">
 <header class="s-bar" data-s-bar>
@@ -84,6 +94,26 @@
       </ul>
     </div></div>
     <p class="s-note">Цена в прайсе - цена на карточке Яндекс.Карт. Актуальность уточняйте при записи.</p>
+  </section>
+
+  <section class="s-section s-reveal" id="masters">
+    <header class="s-section__head"><h2>К кому записываются</h2><p>Имена и слова клиентов взяты из отзывов на Яндекс.Картах.</p></header>
+    <ul class="s-masters">
+      <li>
+        <span class="s-masters__name">Лев</span>
+        <div><blockquote>«Мастер Лев подстригает так, что сразу на 15 лет молодеешь.»</blockquote><p class="s-masters__who">Дмитрий К. · 30 августа 2026</p></div>
+        <div><blockquote>«Мастер Лев - большой профи. Понимает с полуслова.»</blockquote><p class="s-masters__who">KoydanMV · 3 сентября 2026</p></div>
+      </li>
+      <li>
+        <span class="s-masters__name">Юлия</span>
+        <div><blockquote>«Особенно рекомендую Юлию. Профессионал с опытом, всегда подскажет как лучше.»</blockquote><p class="s-masters__who">Anton Berd · 29 августа 2026</p></div>
+      </li>
+      <li>
+        <span class="s-masters__name">Анастасия</span>
+        <div><blockquote>«мастер Анастасия знает свое дело. Работа проделана идеально, без недочетов со стороны мастера.»</blockquote><p class="s-masters__who">Евгений · 25 июля 2026</p></div>
+      </li>
+    </ul>
+    <div class="s-masters__cta"><a class="s-btn" href="#widget">Записаться</a><span>Запись уходит в WhatsApp, там можно назвать мастера.</span></div>
   </section>
 
   <section class="s-section s-reveal">
